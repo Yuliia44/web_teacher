@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img, .footer-logo img {
+    width: 50px; /* Малий розмір логотипу */
+    height: auto;
+    margin-right: 10px; /* Відступи для зручності */ 
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #555555;
+}
+
+header {
+    background: #555555;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#main-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background: #fff;
+}
+
+.profile-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0044cc;
+}
+
+.info {
+    max-width: 50%;
+}
+
+.info h1 {
+    font-size: 2rem;
+    color: #0044cc;
+}
+
+section {
+    padding: 2rem;
+    background: #fff;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #0044cc;
+}
+
+.education-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.education-item span {
+    font-weight: bold;
+    color: #0044cc;
+}
+
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+.certificates img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.organaiz span {
+    font-weight: bold;
+    color: #0044cc;
+}
+
+footer {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 20px 30px; /* Відступи зліва та справа */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Оновлено, щоб елементи меню були вертикально */
+    margin-top: 20px;
+}
+
+/* Контакти в футері */
+footer .contacts {
+    max-width: 50%;
+    margin-right: 30px;
+}
+
+footer .contacts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+footer .contacts p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Меню футера (стовпчик) */
+footer .footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Змінено на стовпчик */
+    gap: 10px; /* Відстань між пунктами меню */
+}
+
+footer .footer-menu li {
+    margin: 0;
+}
+
+footer .footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .footer-menu a:hover {
+    text-decoration: underline;
+}
